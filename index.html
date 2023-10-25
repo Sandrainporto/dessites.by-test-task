@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./src/assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Raleway:wght@400;600;800&display=swap"
+    rel="stylesheet">
+  <title>Test task</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="call-form hidden">
+      <div class="call-form__close-btn">X</div>
+      <form name="call-form__form" action="#" method="post" id="form_message">
+        <h2 class="call-form__title">Рассчитать стоимость.</h2>
+        <p class="call-form__description">Заполните, пожалуста, следующие поля, чтобы наш оператор мог связаться с вами
+          и предложить лучшие условия.</p>
+        <div class="call-form__info info">
+          <div class="call-form__item">
+            <label class="info__name info__name_label" for="name">Ваше имя</label>
+            <input class="info__name info__name_input" id="name" type="text" />
+          </div>
+          <div class="call-form__item">
+            <label class="info__phone info__phone_label" for="phone">Номер телефона</label>
+            <input class="info__phone info__phone_input" id="phone" type="tel" />
+          </div>
+        </div>
+        <p class="error-message">Заполните данные перед отправкой</p>
+        <button class="call-form__btn btn btn_colored type=" submit">Заказать звонок</button>
+      </form>
+    </div>
+
+
+    <header class="header">
+      <a class="header__logo logo" href="/">
+        <img class="logo__image" src="./src/assets/logo.png" alt="logo">
+        <p class="logo__text">Honeycomb Cardboard</p>
+      </a>
+      <nav class="header__navigation navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Каталог</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Доставка</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">О компании</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__contacts">
+        <a href="mailto:mail@dessites.by&body=Добрый день?subject=Задать вопрос" class="contacts__email">
+          info@dessites.by</a>
+        <a href="tel:+375293315555" class="contacts__phone">+375 (29) 331-55-55</a>
+      </div>
+
+
+
+    </header>
+
+
+    <main class="page">
+      <div class="page__container">
+        <div class="page__info">
+          <h1 class="page__title">Панели из сотового картона</h1>
+          <p class="page__description">Создание экологичных, легких в установке и стильных решений для создания
+            уникального интерьера Вашей мечты. Мы предлагаем широкий выбор дизайнов, которые помогут Вам превратить
+            любое помещение в привлекательное и современное пространство, отвечающее любому вкусу и потребностям.</p>
+          <p class="page__about-price">Цена: <span class="page__about-price_span">договорная</span></p>
+          <div class="page__buttons">
+            <a type="button" class="btn btn_colored btn__catalog">В каталог</a>
+            <a type="button" class="btn btn__call-form">Рассчитать стоимость</a>
+
+          </div>
+        </div>
+        <div class="page__image image">
+          <div class="image__container">
+            <!-- <img src="./src/assets/main-image.png" alt="carton-image"> -->
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </main>
+  </div>
+
+
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

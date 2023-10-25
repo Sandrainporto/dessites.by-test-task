@@ -1,0 +1,40 @@
+@import './banner-info';
+@import './banner-btns';
+
+.page {
+  width: 100%;
+  padding: 10px 40px 60px;
+  display: flex;
+  align-items: center;
+  
+
+}
+
+.page__container {
+  display: flex;
+  gap: 120px;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  max-height: 700px;
+
+
+}
+
+
+.page__image {
+  flex: 0 1 50%;
+text-align: center;
+}
+
+
+.image__container {
+max-height: 500px;
+
+img{
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+}

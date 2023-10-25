@@ -1,0 +1,25 @@
+.header__navigation {
+  padding: 4px;
+  flex: 0 1 50%;
+
+}
+
+.navigation__list {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation__link {
+  color: black;
+  font-size: 1.8rem;
+  font-weight: 600;
+  transition: all 0.4s ease-in-out;
+
+
+  &:hover {
+    color: #e49b4e;
+  }
+
+}
