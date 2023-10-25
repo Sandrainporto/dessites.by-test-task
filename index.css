@@ -95,7 +95,7 @@ body {
   line-height: 160%;
   height: 100%;
   font-family: "Montserrat", sans-serif;
-  background: linear-gradient(rgba(255, 255, 255, 0.993), rgba(0, 0, 0, 0.781)), url("./../src/assets/background.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.993), rgba(0, 0, 0, 0.781)), url("./src/assets/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -203,12 +203,12 @@ body {
 }
 
 .contacts__phone_viber {
-  background: url("./../src/assets/icons/viber-icon.png") no-repeat;
+  background: url("./src/assets/icons/viber-icon.png") no-repeat;
   margin-right: -3px;
 }
 
 .contacts__phone_whatsapp {
-  background: url("./../src/assets/icons/whatsapp-icon.png") no-repeat;
+  background: url("./src/assets/icons/whatsapp-icon.png") no-repeat;
 }
 
 .header {
