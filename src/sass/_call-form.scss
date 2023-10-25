@@ -1,18 +1,18 @@
-.call-form.hidden{
-display: none;
-
-}
 .call-form {
-  position: absolute; 
-  z-index: 1; 
+  position: absolute;
+  z-index: 1;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);  
-  width: 500px; 
-  height: 440px;
-  overflow: auto; 
+  top: -150%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  overflow: auto;
   background-color: rgba(255, 255, 255, 0.932);
   padding: 40px;
+  transition: top 1.3s ease;
+}
+.call-form.active {
+  top: 50%;
 }
 .call-form__close-btn {
   position: absolute;
@@ -37,31 +37,28 @@ display: none;
   display: flex;
   flex-direction: column;
   gap: 20px;
-
 }
-.call-form__item{
+.call-form__item {
   display: flex;
   flex-direction: column;
-  label{
+  label {
     font-size: 1.8rem;
     color: #8d6031;
     font-weight: 400;
   }
-  input{
+  input {
     border: 1px solid #000;
     padding: 5px;
   }
-
 }
-.error-message.active{
+.error-message.active {
   display: block;
   color: red;
 }
-.error-message{
-  display: none
+.error-message {
+  display: none;
 }
 
 .call-form__btn {
   margin-top: 40px;
 }
-

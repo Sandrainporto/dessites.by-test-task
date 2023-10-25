@@ -1,11 +1,8 @@
-@import './logo';
-@import './navigation';
-@import './contacts';
-
+@import "./logo";
+@import "./navigation";
+@import "./contacts";
 
 .header {
-//   position: sticky;
-// top: 0px;
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
@@ -13,5 +10,4 @@
   gap: 1rem;
   align-items: center;
   padding: 20px 40px;
-
 }

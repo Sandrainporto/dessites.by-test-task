@@ -1,1 +1,0 @@
-# dessites.by-test-task

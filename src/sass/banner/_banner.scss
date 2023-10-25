@@ -1,13 +1,11 @@
-@import './banner-info';
-@import './banner-btns';
+@import "./banner-info";
+@import "./banner-btns";
 
 .page {
   width: 100%;
   padding: 10px 40px 60px;
   display: flex;
   align-items: center;
-  
-
 }
 
 .page__container {
@@ -17,24 +15,19 @@
   width: 90%;
   margin: 0 auto;
   max-height: 700px;
-
-
 }
-
 
 .page__image {
   flex: 0 1 50%;
-text-align: center;
+  text-align: center;
 }
-
 
 .image__container {
-max-height: 500px;
+  max-height: 500px;
 
-img{
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-}
-
+  img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
 }

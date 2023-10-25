@@ -1,34 +1,32 @@
-const orderCallBtn = document.querySelector('.btn__call-form');
-const callForm = document.querySelector('.call-form');
+const openPopUpBtn = document.querySelector('.btn__call-form');
+const clientForm = document.querySelector('.call-form');
 const closeFormBtn = document.querySelector('.call-form__close-btn');
-const orederCallFormBtn = document.querySelector('.call-form__btn');
+const sendFormBtn = document.querySelector('.call-form__btn');
 
+const inputName = document.querySelector('.info__name_input');
+const inputPhone = document.querySelector('.info__phone_input');
+const errorMessage = document.querySelector('.error-message');
 
-
-
-
-
-orderCallBtn.addEventListener('click', () => {
-  callForm.classList.remove('hidden')
+openPopUpBtn.addEventListener('click', () => {
+  clientForm.classList.add('active');
 })
 
 closeFormBtn.addEventListener('click', () => {
-  callForm.classList.add('hidden')
+  inputName.value = '';
+  inputPhone.value = '';
+  clientForm.classList.remove('active')
+  errorMessage.classList.remove('active');
 })
 
-orederCallFormBtn.addEventListener('click', (e) => {
-  const inputName = document.querySelector('.info__name_input');
-  const inputPhone = document.querySelector('.info__phone_input');
-  const errorMessage = document.querySelector('.error-message');
-
-
+sendFormBtn.addEventListener('click', (e) => {
   e.preventDefault()
+
   if (inputName.value == '' || inputPhone.value == '') {
     errorMessage.classList.add('active');
   } else {
     errorMessage.classList.remove('active');
-
-    callForm.classList.add('hidden')
-
+    inputName.value = '';
+    inputPhone.value = '';
+    clientForm.classList.remove('active')
   }
 })

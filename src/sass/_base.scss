@@ -4,14 +4,14 @@ body {
   font-weight: normal;
   line-height: 160%;
   height: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 
-background: linear-gradient( rgba(255, 255, 255, 0.993), rgba(0, 0, 0, 0.781) ), url('./../src/assets/factory.jpg');
-background-repeat: no-repeat;
-background-size: cover;
-background-attachment: fixed;
-background-position: top;
-};
+  background: linear-gradient(rgba(255, 255, 255, 0.993), rgba(0, 0, 0, 0.781)), url("./../src/assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+}
 
 .wrapper {
   position: relative;
@@ -27,6 +27,4 @@ background-position: top;
 
 .page {
   flex: 1 1 auto;
-
-
 }

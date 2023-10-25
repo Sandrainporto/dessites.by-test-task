@@ -4,7 +4,8 @@
   align-items: center;
   padding: 4px 8px;
   gap: 7px;
-  a{
+
+  a {
     font-size: 1.8rem;
     font-weight: 600;
     color: black;
@@ -16,6 +17,26 @@
   }
 }
 
-.contacts__email {}
+.contacts__phones {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 9px;
+}
 
-.contacts__phone {}
+.contacts__phone_text {
+}
+
+.contacts__phone {
+  width: 30px;
+  height: 30px;
+}
+
+.contacts__phone_viber {
+  background: url("./../src/assets/icons/viber-icon.png") no-repeat;
+  margin-right: -3px;
+}
+
+.contacts__phone_whatsapp {
+  background: url("./../src/assets/icons/whatsapp-icon.png") no-repeat;
+}
